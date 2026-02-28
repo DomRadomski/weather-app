@@ -6,6 +6,41 @@
     <title>Webpack App</title>
   </head>
   <body>
-    <div id="app"></div>
+
+    <div class="content">
+      
+      <h1 class="weather-title">Check the weather below!</h1>
+
+      <form class="search-bar" role="search" aria-label="Weather search">
+
+        <label class="sr-only" for="location">Search for a location</label>
+
+        <input
+          id="location"
+          class="search-input"
+          type="search"
+          name="q"
+          placeholder="Search city or postcode..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+
+        <button class="search-button" type="button" aria-label="Search">
+          
+          <!-- Simple magnifying glass icon (SVG) -->
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M10 4a6 6 0 104.472 10.03l3.749 3.748a1 1 0 001.414-1.414l-3.748-3.749A6 6 0 0010 4zm0 2a4 4 0 110 8 4 4 0 010-8z"
+            />
+          </svg>
+
+        </button>
+
+      </form>
+
+    </div>
+
+    <div class="cities"></div>
+
   </body>
 </html>
