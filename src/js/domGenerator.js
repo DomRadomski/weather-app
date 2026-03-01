@@ -75,14 +75,14 @@ export const genWeatherCard = (city, temp) => {
   // City heading
   const cityEl = genElement(
     "h2",
-    "weather-card__city",
+    "weather-card_city",
     city
   );
 
   // Temperature
   const tempEl = genElement(
     "p",
-    "weather-card__temp",
+    "weather-card_temp",
     `${temp}°C`
   );
 
